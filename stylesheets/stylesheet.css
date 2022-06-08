@@ -1,0 +1,61 @@
+/* ==== VARIABLER ====*/
+
+html {
+  --space-xxl: 4rem;
+  --space-xl: 2rem;
+  --space-l: 1.5rem;
+  --space-m: 1rem;
+  --space-s: 0.75rem;
+  --space-xs: 0.5rem;
+}
+
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  align-items: center;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  margin-block: var(--space-xs);
+}
+
+/*===== MEDIA Q =======*/
+
+@media (min-width: 800px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline-start: var(--space-xl);
+    border: 1px dotted blue;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  header nav ul li {
+    text-align: center;
+    vertical-align: baseline;
+    border: 1px dashed red;
+    padding-block: 28.74165px;
+    padding-inline: var(--space-m);
+  }
+
+  .om-mig-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
