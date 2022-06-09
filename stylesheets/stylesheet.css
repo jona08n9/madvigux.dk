@@ -4,6 +4,7 @@ html {
   --space-xxl: 4rem;
   --space-xl: 2rem;
   --space-l: 1.5rem;
+  --space-h3: 1.17rem;
   --space-m: 1rem;
   --space-s: 0.75rem;
   --space-xs: 0.5rem;
@@ -18,46 +19,96 @@ html {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   align-items: center;
+  z-index: 50;
+  position: sticky;
+  top: 0%;
+  width: 100%;
 }
 
 .logo {
   width: 75px;
   height: 75px;
-  margin-block: 3px;
+  margin-block-start: var(--space-xs);
+  margin-inline-start: var(--space-xl);
 }
 
 .main-menu a {
-  text-decoration: none;
   color: black;
   overflow: hidden;
   display: block;
   position: relative;
-  padding: 0.2em 0;
+  padding-inline: var(--space-m);
 }
 
-.main-menu a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.1em;
-  background-color: red;
-  opacity: 1;
-  transition: opacity 300ms, transform 300ms;
+.header-link:hover {
+  background-color: aquamarine;
+  transition: all 0.4s ease-in-out;
+}
+
+.page-active {
+  background-color: blueviolet;
+}
+
+.burger {
+  position: fixed;
+  top: var(--space-m);
+  right: var(--space-m);
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+  transition: transform 0.2s ease-out;
+}
+
+.menu {
+  position: fixed;
   transform: translateX(-100%);
+  top: 86.85px;
+  left: 0%;
+  background: white;
+  list-style: none;
+  padding-block-start: var(--space-m);
+  padding-inline: 20vw;
+  z-index: 50;
+  border: 1px dashed black;
 }
 
-.main-menu a:hover::after,
-.main-menu a:focus::after {
-  transform: translateX(0);
+.menu li {
+  margin-block-end: var(--space-m);
+  text-align: center;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.transition-burger {
+  transition: transform 0.2s;
+}
+
+.hide {
+  display: none;
 }
 
 /*===== MEDIA Q =======*/
 
 @media (min-width: 800px) {
+  h1 {
+    font-size: var(--space-xl);
+    padding-block-start: var(--space-xl);
+    padding-inline-start: 2.4rem;
+  }
+
   header {
     display: flex;
     align-items: center;
@@ -75,14 +126,21 @@ header {
   header nav ul li {
     text-align: center;
     vertical-align: baseline;
-
-    padding-inline: var(--space-l);
-    /* border: 1px dashed red; */
+    border: 1px dashed red;
+    margin-block-end: 0;
   }
 
   .om-mig-li {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .header-theme {
+    padding-block: var(--space-l);
+  }
+
+  .header-about {
+    padding-block: 33.34px;
   }
 }
