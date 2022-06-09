@@ -23,6 +23,8 @@ a {
   text-decoration: none;
 }
 
+/* ==== HEADER CSS ===== */
+
 header {
   align-items: center;
   z-index: 50;
@@ -43,7 +45,8 @@ header {
   overflow: hidden;
   display: block;
   position: relative;
-  padding-inline: var(--space-m);
+  padding-inline: 30vw;
+  padding-block: var(--space-s);
 }
 
 .header-link:hover {
@@ -77,14 +80,11 @@ header {
   left: 0%;
   background: white;
   list-style: none;
-  padding-block-start: var(--space-m);
-  padding-inline: 20vw;
   z-index: 50;
   border: 1px dashed black;
 }
 
 .menu li {
-  margin-block-end: var(--space-m);
   text-align: center;
 }
 
@@ -98,6 +98,10 @@ header {
 
 .hide {
   display: none;
+}
+
+li .header-about {
+  padding-block-end: var(--space-m);
 }
 
 /*===== MEDIA Q =======*/
@@ -136,11 +140,13 @@ header {
     justify-content: center;
   }
 
-  .header-theme {
+  li .header-theme {
     padding-block: var(--space-l);
+    padding-inline: var(--space-m);
   }
 
-  .header-about {
+  li .header-about {
     padding-block: 33.34px;
+    padding-inline: var(--space-m);
   }
 }
