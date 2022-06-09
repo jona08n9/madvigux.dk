@@ -34,9 +34,9 @@ header {
 }
 
 .logo {
-  width: 75px;
-  height: 75px;
-  margin-block-start: var(--space-xs);
+  width: 50px;
+  height: 50px;
+  margin-block-start: var(--space-s);
   margin-inline-start: var(--space-xl);
 }
 
@@ -60,10 +60,10 @@ header {
 
 .burger {
   position: fixed;
-  top: var(--space-m);
-  right: var(--space-m);
+  top: var(--space-s);
+  right: var(--space-xl);
   padding: 4px;
-  border: black solid 1px;
+  border: none;
   background: white;
   cursor: pointer;
 }
@@ -76,7 +76,7 @@ header {
 .menu {
   position: fixed;
   transform: translateX(-100%);
-  top: 86.85px;
+  top: 65.85px;
   left: 0%;
   background: white;
   list-style: none;
@@ -111,6 +111,11 @@ li .header-about {
     font-size: var(--space-xl);
     padding-block-start: var(--space-xl);
     padding-inline-start: 2.4rem;
+  }
+
+  .logo {
+    width: 75px;
+    height: 75px;
   }
 
   header {
