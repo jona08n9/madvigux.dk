@@ -65,5 +65,6 @@ burger.addEventListener("click", toggleMenu);
 const tema = document.querySelector("#tema-box");
 
 function scrollToTheme() {
-  tema.scrollIntoView({ block: "end", inline: "nearest", behavior: "smooth" });
+  tema.style.scrollMarginTop = `${80}px`;
+  tema.scrollIntoView({ block: "start", behavior: "smooth" });
 }
