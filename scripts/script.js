@@ -59,3 +59,11 @@ function toggleMenu() {
 
 //Event listener
 burger.addEventListener("click", toggleMenu);
+
+// ===== FRONT PAGE =====
+
+const tema = document.querySelector("#tema-box");
+
+function scrollToTheme() {
+  tema.scrollIntoView({ block: "end", inline: "nearest", behavior: "smooth" });
+}

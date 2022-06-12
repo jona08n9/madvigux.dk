@@ -21,6 +21,34 @@ html {
 
 a {
   text-decoration: none;
+  color: red;
+}
+
+a:visited {
+  color: red;
+}
+
+p {
+  font-size: var(--space-m);
+  max-width: 60ch;
+}
+
+h1 {
+  font-size: var(--space-xl);
+  margin-block: var(--space-m);
+  margin-inline: var(--space-m);
+}
+
+h2 {
+  font-size: var(--space-l);
+}
+
+h3 {
+  font-size: var(--space-h3);
+}
+
+.flex {
+  display: flex;
 }
 
 /* ==== HEADER CSS ===== */
@@ -31,6 +59,7 @@ header {
   position: sticky;
   top: 0%;
   width: 100%;
+  background-color: beige;
 }
 
 .logo {
@@ -104,6 +133,72 @@ li .header-about {
   padding-block-end: var(--space-m);
 }
 
+/*===== Front Page =======*/
+
+.index-top {
+  text-align: center;
+  margin-block-end: var(--space-xl);
+}
+
+.front-mobile-jonas {
+  width: auto;
+  height: 40vh;
+  margin-inline: auto;
+}
+
+article > h2 {
+  margin-inline: var(--space-m);
+  margin-block-end: var(--space-m);
+}
+
+.mobile-article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-inline: var(--space-m);
+  margin-block-end: var(--space-l);
+}
+
+.mobile-article p {
+  line-height: 1.1;
+  margin-inline: var(--space-m);
+  margin-block-end: var(--space-m);
+}
+
+.span-til-tema-front {
+  color: red;
+  cursor: pointer;
+}
+
+.section-flex {
+  margin-inline-start: var(--space-l);
+}
+.section-flex h2 {
+  margin-block-end: var(--space-xs);
+}
+
+.front-page-flex {
+  flex-direction: column;
+}
+
+.front-page-flex li {
+  list-style-type: disc;
+  margin-inline-start: var(--space-m);
+  margin-block: var(--space-xs);
+}
+
+.front-page-flex a {
+  cursor: pointer;
+  color: black;
+  display: block;
+}
+
+.front-page-flex a:hover {
+  background-color: pink;
+  transition: all 0.7s ease-in-out;
+}
+
+/*===== XXXXX =======*/
+
 /*===== MEDIA Q =======*/
 
 @media (min-width: 800px) {
@@ -124,6 +219,7 @@ li .header-about {
     justify-content: space-between;
     padding-inline-start: var(--space-xl);
     border: 1px dotted blue;
+    background-color: beige;
   }
 
   header nav ul {
