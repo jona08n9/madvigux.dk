@@ -42,7 +42,7 @@
       </button>
     </header>
     <div class="breadcrumb">
-      <h4><a>Forside</a><span>/</span><a href="">Om mig</a></h4>
+      <h4><a href="index.html">Forside</a><span>/</span>Om mig</h4>
     </div>
     <h1 id="about-top">Om Mig</h1>
 
@@ -137,7 +137,45 @@
           </table>
         </div>
         </div>
-</div>
+      </div>
+      <h2 id="contact" class="contact">Kontakt Mig</h2>
+            <section class="contact_form">
+        <h3>Har du brug for at kontakte os? Så udfyld formularen forneden.</h3>
+        <div id="container">
+          <h1 id="h1_contact">Kontakt MadvigUX</h1>
+          <form action="tak.html" name="kontakt" method="post" id="contact_form" netlify>
+            <div class="name">
+              <label for="name_input"></label>
+              <input type="text" placeholder="Dit navn" name="name" id="name_input" required />
+            </div>
+            <div class="email">
+              <label for="email_input"></label>
+              <input type="email" placeholder="Din email" name="email" id="email_input" required />
+            </div>
+            <div class="telephone">
+              <label for="telephone_input"></label>
+              <input type="text" placeholder="Dit telefonnummer" name="telephone" id="telephone_input" required />
+            </div>
+            <div class="subject">
+              <label for="subject_input">Hvad kan jeg hjælpe dig med?</label>
+              <select name="subject" id="subject_input" required>
+                <option value="" disabled hidden selected>Emne</option>
+                <option>Jeg vil gerne have et tilbyd på illustrationer.</option>
+                <option>Jeg vil gerne have et tilbyd på hjemmeside opsætning.</option>
+                <option>Jeg ønsker at snakke om et samarbejde.</option>
+                <option>Andet.</option>
+              </select>
+            </div>
+            <div class="message">
+              <label for="message_input"></label>
+              <textarea name="message" placeholder="SKRIV DIN BESKED HER" id="message_input" cols="30" rows="5" required></textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Send besked" id="form_button" />
+            </div>
+          </form>
+        </div>
+      </section>
 <footer></footer>
     <script src="scripts/script.js"></script>
   </body>
