@@ -1,3 +1,34 @@
+/* Fonts
+font-family: neusa-next-std,sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: neusa-next-std,sans-serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: neusa-next-std,sans-serif;
+font-weight: 500;
+font-style: italic;
+
+font-family: neusa-next-std,sans-serif;
+font-weight: 500;
+font-style: normal;
+
+font-family: neusa-next-std,sans-serif;
+font-weight: 700;
+font-style: italic;
+
+font-family: neusa-next-std,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: le-monde-livre-classic-byol,serif;
+font-weight: 300;
+font-style: normal;
+
+*/
+
 /* ==== VARIABLER ====*/
 
 html {
@@ -20,37 +51,59 @@ html {
   text-decoration: none;
 }
 
+body {
+  background-color: #c5ddfc;
+}
+
 a {
   text-decoration: none;
-  color: red;
+  color: #ff7562;
 }
 
 a:visited {
-  color: red;
+  color: #ff7562;
 }
 
 p {
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.2;
   font-size: var(--space-m);
   max-width: 60ch;
 }
 
 h1 {
+  font-family: neusa-next-std, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 2px;
   font-size: var(--space-xl);
   margin-block: var(--space-m);
   margin-inline: var(--space-l);
+  color: #4a5259;
 }
 
 h2 {
+  font-family: neusa-next-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: var(--space-l);
+  color: #4a5259;
 }
 
 h3 {
+  font-family: neusa-next-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: var(--space-h3);
+  color: #4a5259;
 }
 
 main {
   max-width: 1200px;
   margin-inline: auto;
+  color: #4a5259;
 }
 
 .flex {
@@ -71,23 +124,28 @@ header {
   position: sticky;
   top: 0%;
   width: 100%;
-  background-color: beige;
+  background-color: #f0f0f0;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   margin-block-start: var(--space-s);
   margin-inline-start: var(--space-xl);
 }
 
 .menu-ul a {
-  color: black;
+  color: #004643;
+  font-family: neusa-next-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--space-m);
   overflow: hidden;
   display: block;
   position: relative;
   margin-inline: 30vw;
   margin-block: var(--space-m);
+  padding-block: var(--space-m);
   padding-block-end: var(--space-xs);
 }
 
@@ -98,7 +156,7 @@ header {
   left: 0;
   width: 100%;
   height: 0.2em;
-  background-color: blue;
+  background-color: #ff7562;
   opacity: 1;
   transition: opacity 300ms, transform 300ms;
   transform: translate3d(-100%, 0, 0);
@@ -110,16 +168,16 @@ header {
 }
 
 .page-active {
-  background-color: blueviolet;
+  background-color: #ff7562;
 }
 
 .burger {
   position: fixed;
-  top: var(--space-s);
+  top: var(--space-l);
   right: var(--space-xl);
   padding: 4px;
   border: none;
-  background: white;
+  background: #f0f0f0;
   cursor: pointer;
 }
 
@@ -131,12 +189,12 @@ header {
 .menu {
   position: fixed;
   transform: translateX(-100%);
-  top: 65.85px;
+  top: 81.35px;
   left: 0%;
-  background: white;
+  background: #f0f0f0;
   list-style: none;
+  border: 1px solid #004643;
   z-index: 50;
-  border: 1px dashed black;
 }
 
 .menu li {
@@ -161,9 +219,24 @@ header {
 
 .breadcrumb h4 {
   text-align: center;
+  color: #4a56e2;
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 300;
+  font-style: italic;
 }
 .breadcrumb span {
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 300;
+  font-style: normal;
   margin-inline: var(--space-s);
+}
+
+.breadcrumb a {
+  color: #4a56e2;
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
 }
 
 /*===== Front Page =======*/
@@ -197,13 +270,12 @@ article > h2,
 }
 
 .mobile-article p {
-  line-height: 1.1;
   margin-inline: var(--space-l);
   margin-block-end: var(--space-m);
 }
 
 .span-til-tema-front {
-  color: red;
+  color: #ff7562;
   cursor: pointer;
 }
 
@@ -226,13 +298,18 @@ article > h2,
 
 .front-page-flex a {
   cursor: pointer;
-  color: black;
+  color: #4a5259;
   display: inline-block;
+  margin-inline: 0 var(--space-s);
+  padding-inline: 0 var(--space-s);
+  padding-block: var(--space-s);
   max-width: 300px;
 }
 
 .front-page-flex a:hover {
-  background-color: pink;
+  background-color: #fce9c5;
+  border-radius: 5%;
+  padding-inline: var(--space-s);
   transition: all 0.7s ease-in-out;
 }
 
@@ -256,7 +333,6 @@ article > h2,
 }
 
 .tema-beskrivelse p {
-  line-height: 1.1;
   margin-block: var(--space-m);
 }
 
@@ -275,6 +351,7 @@ article > h2,
 .flex-rows h3,
 .flex-rows p {
   margin-inline-start: var(--space-l);
+  margin-block: var(--space-s);
 }
 
 .flex-rows p {
@@ -343,7 +420,7 @@ article > h2,
 
 /*===== About =======*/
 video {
-  width: 420px;
+  width: 350px;
   display: block;
   opacity: 0.5;
   margin-inline-start: var(--space-m);
@@ -360,13 +437,15 @@ figcaption {
 }
 
 .video-player-button {
-  background: #f97e72;
-  color: #000;
+  background: #ff7562;
+  color: #4a5259;
   border: none;
-  font-size: 1.25rem;
+  font-family: neusa-next-std, sans-serif;
   font-weight: 700;
-  letter-spacing: 0.075rem;
-  padding: 0.5rem 1rem;
+  font-style: italic;
+  font-size: var(--space-m);
+  letter-spacing: 0.08rem;
+  padding: var(--space-xs) var(--space-m);
   border-radius: 5%;
   cursor: pointer;
   transition: 0.3s;
@@ -374,7 +453,7 @@ figcaption {
 }
 
 .playing .video-player-button {
-  background: violet;
+  background: #fce9c5;
 }
 .abouth2 {
   margin-inline-start: var(--space-m);
@@ -389,13 +468,13 @@ figcaption {
 }
 
 about-table {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #4a5259;
 }
 
 td {
   padding-inline-end: var(--space-m);
   padding-block: var(--space-s);
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #4a5259;
 }
 
 .tr_quest {
@@ -439,8 +518,9 @@ input,
 select,
 textarea {
   color: #5a5a5a;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 300;
+  font-style: normal;
   font-size: 1.5rem;
   margin: 0;
 }
@@ -454,7 +534,7 @@ textarea {
 }
 
 #container {
-  border: solid 0.1px #474544;
+  border: solid 0.1px #4a5259;
   max-width: 900px;
   margin: var(--space-xs) auto;
   position: relative;
@@ -466,10 +546,11 @@ form {
 }
 
 #h1_contact {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  color: #474544;
-  letter-spacing: 3px;
+  font-family: neusa-next-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #4a5259;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
   padding-block-start: var(--space-m);
@@ -477,10 +558,12 @@ form {
 
 label {
   display: block;
-  color: #474544;
-  font-weight: 400;
+  color: #4a5259;
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 300;
+  font-style: normal;
   letter-spacing: 1px;
-  padding-block: var(--space-m);
+  padding-block: var(--space-s);
 }
 
 input[type="text"],
@@ -488,10 +571,12 @@ input[type="text"],
 select {
   background: none;
   border: none;
-  border-bottom: solid 2px #474544;
-  color: #474544;
-  font-size: var(--space-s);
-  font-weight: 400;
+  border-bottom: solid 2px #4a5259;
+  color: #4a5259;
+  font-size: var(--space-m);
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 300;
+  font-style: normal;
   letter-spacing: 1px;
   margin-block: 0 var(--space-xl);
   padding-block: 0 var(--space-s);
@@ -503,10 +588,12 @@ select {
 textarea {
   background: none;
   border: none;
-  border-bottom: solid 2px #474544;
-  color: #474544;
+  border-bottom: solid 2px #4a5259;
+  color: #4a5259;
   font-size: 1em;
-  font-weight: 400;
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 300;
+  font-style: normal;
   letter-spacing: 1px;
   margin: 0em 0 2em 0;
   padding: 0 0 1em 0;
@@ -545,8 +632,10 @@ select {
 }
 
 textarea {
-  font-family: "EB Garamond", serif;
-  color: #000000;
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #4a5259;
   font-size: 1.1rem;
   line-height: 150%;
   height: 150px;
@@ -556,22 +645,25 @@ textarea {
 
 #form_button {
   background: none;
-  border: solid 2px #474544;
-  color: #474544;
+  border: solid 2px #4a5259;
+  border-radius: 5%;
+  color: #4a5259;
   cursor: pointer;
   display: inline-block;
   font-size: 0.875em;
-  font-weight: bold;
+  font-family: neusa-next-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   outline: none;
-  padding-block: var(--space-l);
+  padding-block: var(--space-m);
   padding-inline: var(--space-m);
   text-transform: uppercase;
   transition: all 0.3s;
 }
 
 #form_button:hover {
-  background: #474544;
-  color: #f2f3eb;
+  background: #4a5259;
+  color: #f0f0f0;
 }
 
 /*===== MEDIA Q =======*/
@@ -603,8 +695,6 @@ textarea {
     align-items: center;
     justify-content: space-between;
     padding-inline-start: var(--space-xl);
-    border: 1px dotted blue;
-    background-color: beige;
   }
 
   header nav ul {
@@ -642,7 +732,7 @@ textarea {
     left: 0;
     width: 100%;
     height: 0.2em;
-    background-color: blue;
+    background-color: #ff7562;
     opacity: 1;
     transition: opacity 300ms, transform 300ms;
     transform: translate3d(-100%, 0, 0);
@@ -689,6 +779,23 @@ textarea {
     line-height: 1.2;
     margin-inline: var(--space-m);
     margin-block-end: var(--space-m);
+  }
+
+  .section-flex {
+    width: 850px;
+    margin-inline: auto;
+  }
+
+  .section-flex > h2 {
+    margin-block-start: var(--space-l);
+    margin-inline-start: 7rem;
+  }
+
+  .front-page-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-items: start;
+    margin-inline-start: 7rem;
   }
 
   /* ====== FLEX ====== */
@@ -772,18 +879,18 @@ textarea {
   }
 
   .about-box {
-    border: 1px solid black;
+    border: 1px solid #4a5259;
     border-radius: 1%;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px #353b40;
   }
   .cv-box {
-    border: 1px solid black;
+    border: 1px solid #4a5259;
     border-radius: 1%;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px #353b40;
   }
   .edu-box {
-    border: 1px solid black;
-    box-shadow: 5px 10px 8px #888888;
+    border: 1px solid #4a5259;
+    box-shadow: 5px 10px 8px #353b40;
     border-radius: 1%;
   }
 
