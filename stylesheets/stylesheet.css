@@ -252,10 +252,14 @@ header {
   margin-inline: auto;
 }
 
-article > h2,
-.wb-text h2 {
+article > h2 {
   margin-inline: var(--space-l);
   margin-block-end: var(--space-m);
+}
+
+.wb-text h2 {
+  margin-block-end: var(--space-m);
+  margin-inline-start: var(--space-s);
 }
 
 .window-article {
