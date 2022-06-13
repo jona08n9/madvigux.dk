@@ -413,11 +413,11 @@ td {
 /* ===== Contact Form ===== */
 
 .contact {
-  margin-inline: var(--space-xxl);
-  margin-block-start: var(--space-xxl);
+  margin-inline: var(--space-m);
+  margin-block-start: var(--space-xl);
 }
 .contact_form {
-  margin-inline: var(--space-xxl);
+  margin-inline: var(--space-m);
 }
 
 .contact_form > h3 {
@@ -456,13 +456,13 @@ textarea {
 #container {
   border: solid 0.1px #474544;
   max-width: 900px;
-  margin: 10px auto;
+  margin: var(--space-xs) auto;
   position: relative;
 }
 
 form {
-  padding: 37.5px;
-  margin: 30px 0;
+  padding: var(--space-xl);
+  margin-block: var(--space-l);
 }
 
 #h1_contact {
@@ -472,7 +472,15 @@ form {
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
-  padding-block-start: 1em;
+  padding-block-start: var(--space-m);
+}
+
+label {
+  display: block;
+  color: #474544;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-block: var(--space-m);
 }
 
 input[type="text"],
@@ -482,12 +490,11 @@ select {
   border: none;
   border-bottom: solid 2px #474544;
   color: #474544;
-  font-size: 1em;
+  font-size: var(--space-s);
   font-weight: 400;
   letter-spacing: 1px;
-  margin: 0em 0 2.3em 0;
-  padding: 0 0 0.875em 0;
-  text-transform: uppercase;
+  margin-block: 0 var(--space-xl);
+  padding-block: 0 var(--space-s);
   width: 100%;
   box-sizing: border-box;
   transition: all 0.3s;
@@ -533,7 +540,7 @@ textarea:focus {
 
 select {
   appearance: none;
-  background: url("img/svg/arrow_down.svg") no-repeat right;
+  background: url("/images/arrow_down.svg") no-repeat right;
   outline: none;
 }
 
@@ -553,11 +560,11 @@ textarea {
   color: #474544;
   cursor: pointer;
   display: inline-block;
-  font-family: "Lato", sans-serif;
   font-size: 0.875em;
   font-weight: bold;
   outline: none;
-  padding: 20px 35px;
+  padding-block: var(--space-l);
+  padding-inline: var(--space-m);
   text-transform: uppercase;
   transition: all 0.3s;
 }
