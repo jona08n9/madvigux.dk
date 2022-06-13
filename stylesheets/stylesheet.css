@@ -2,6 +2,7 @@
 
 html {
   --space-xxl: 4rem;
+  --space-xll: 3rem;
   --space-xl: 2rem;
   --space-l: 1.5rem;
   --space-h3: 1.17rem;
@@ -36,7 +37,7 @@ p {
 h1 {
   font-size: var(--space-xl);
   margin-block: var(--space-m);
-  margin-inline: var(--space-m);
+  margin-inline: var(--space-l);
 }
 
 h2 {
@@ -47,8 +48,19 @@ h3 {
   font-size: var(--space-h3);
 }
 
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
 .flex {
   display: flex;
+}
+
+hr {
+  margin-block: var(--space-xl);
+  margin-inline: auto;
+  width: 80%;
 }
 
 /* ==== HEADER CSS ===== */
@@ -158,7 +170,7 @@ header {
 
 article > h2,
 .wb-text h2 {
-  margin-inline: var(--space-m);
+  margin-inline: var(--space-l);
   margin-block-end: var(--space-m);
 }
 
@@ -169,13 +181,13 @@ article > h2,
 .mobile-article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-inline: var(--space-m);
+  margin-inline: var(--space-l);
   margin-block-end: var(--space-l);
 }
 
 .mobile-article p {
   line-height: 1.1;
-  margin-inline: var(--space-m);
+  margin-inline: var(--space-l);
   margin-block-end: var(--space-m);
 }
 
@@ -185,7 +197,7 @@ article > h2,
 }
 
 .section-flex {
-  margin-inline: var(--space-xxl) var(--space-l);
+  margin-inline: var(--space-xxl) var(--space-xl);
 }
 .section-flex h2 {
   margin-block-end: var(--space-xs);
@@ -197,7 +209,7 @@ article > h2,
 
 .front-page-flex li {
   list-style-type: disc;
-  margin-inline-start: var(--space-m);
+  margin-inline-start: var(--space-l);
   margin-block: var(--space-xs);
 }
 
@@ -212,6 +224,68 @@ article > h2,
   transition: all 0.7s ease-in-out;
 }
 
+/*===== Grid =======*/
+.grid-4_3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/*===== Tema 01 =======*/
+
+.tema-beskrivelse {
+  margin-inline: var(--space-l);
+}
+
+.tema-beskrivelse li,
+.flex-rows li {
+  list-style: disc;
+  margin-inline-start: var(--space-xll);
+}
+
+.tema-beskrivelse p {
+  line-height: 1.1;
+  margin-block: var(--space-m);
+}
+
+.erfaringer > h2 {
+  margin-inline-start: var(--space-l);
+  margin-block: var(--space-l) var(--space-s);
+}
+
+.flex-img {
+  width: 60vw;
+  min-width: 300px;
+  height: auto;
+  margin-inline-start: var(--space-xl);
+}
+
+.flex-rows h3,
+.flex-rows p {
+  margin-inline-start: var(--space-l);
+}
+
+.flex-rows p {
+  margin-block-end: var(--space-l);
+}
+
+.grid-4_3-img1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  width: 40vw;
+  min-width: 200px;
+  height: auto;
+  margin-inline-start: var(--space-l);
+}
+.grid-4_3-img2 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  width: 40vw;
+  min-width: 200px;
+  height: auto;
+  margin-inline-start: var(--space-l);
+}
+
 /*===== XXXXX =======*/
 
 /*===== MEDIA Q =======*/
@@ -219,8 +293,14 @@ article > h2,
 @media (min-width: 800px) {
   h1 {
     font-size: var(--space-xl);
-    padding-block-start: var(--space-l);
-    padding-inline-start: 2.4rem;
+    margin-block-start: var(--space-l);
+    margin-inline-start: var(--space-xxl);
+  }
+
+  hr {
+    margin-block: var(--space-xxl);
+    margin-inline: auto;
+    width: 60%;
   }
 
   .index-top {
@@ -250,7 +330,6 @@ article > h2,
 
   header nav ul li {
     text-align: center;
-    vertical-align: baseline;
     margin-block-end: 0;
   }
 
@@ -325,4 +404,70 @@ article > h2,
     margin-inline: var(--space-m);
     margin-block-end: var(--space-m);
   }
+
+  /* ====== FLEX ====== */
+  .flex-rows {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xl);
+    margin-block-end: var(--space-xl);
+    margin-inline-start: 0;
+  }
+
+  .flex-rows h3 {
+    margin-block-end: var(--space-m);
+    margin-inline-start: 0;
+  }
+
+  .flex-rows p {
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    margin-block-end: var(--space-s);
+  }
+
+  .flex-rows li {
+    margin-inline-start: var(--space-l);
+  }
+
+  .flex-img {
+    width: 50vw;
+    height: fit-content;
+    margin-inline-start: 0;
+  }
+
+  /* ==== Tema 01 ====== */
+  .tema-beskrivelse {
+    margin-inline: var(--space-xxl);
+  }
+
+  .erfaringer {
+    margin-inline: var(--space-xxl);
+  }
+  .erfaringer > h2 {
+    margin-inline: 0;
+    margin-block-end: var(--space-m);
+  }
+
+  .boks-2 {
+    order: -1;
+  }
+
+  .grid-4_3-img1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    width: 30vw;
+    min-width: 150px;
+    height: auto;
+  }
+
+  .grid-4_3-img2 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    width: 30vw;
+    min-width: 150px;
+    height: auto;
+  }
+
+  /* ==== FRONT PAGE ====== */
+  /* ==== FRONT PAGE ====== */
 }
