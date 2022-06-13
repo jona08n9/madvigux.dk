@@ -44,9 +44,59 @@
     <div class="breadcrumb">
       <h4><a>Forside</a><span>/</span><a href="">Tema 04 - Grundlæggende Animation</a></h4>
     </div>
-
+    <main>
     <h1 nid="tema04-top">Tema 04 - Grundlæggende Animation</h1>
+          <section class="tema-beskrivelse">
+        <h2>Beskrivelse af temaet</h2>
+        <p>I dette tema fik vi kendskab til JavaScript for at kunne lave vores eget spil. Foruden at lære at kode skulle vi også lære at arbejde med grafiske elementer og konventioner for UI-elementer samt det bagvedlæggende arbejde i form af diagrammer og planlægning af flows.</p>
+        <p>Før selve udviklingen af spillet, skulle vi producere et designgrundlag gennem forskellige teknikker, som:</p>
+        <ul>
+          <li>Idégenereringsteknikker</li>
+          <li>Skitseringsteknikker</li>
+          <li>Mood boards og styletiles</li>
+          </ul>
+        <p>Spillet, som jeg udviklede, skulle tage udgangspunkt i en allerede eksisterende stilart, jeg tog inspiration fra. Alle illustrationer skulle jeg selv lave i Adobe Illustrator.</p>
+      <p><a href="https://madvigux.dk/kea/04_animation/spil/">Tryk her for at se det færdige spil samt forklaringshjemmeside om idéen, teknisk information, grafik og assets.</a></p>
+      </section>
+      <section class="erfaringer">
+        <h2>Udvalgte erfaringer</h2>
+        <div class="flex-rows">
+            <img class="flex-img grid-4_3-img1" src="images/FrankTheFrancophileAD.svg" alt="Frank The Francophile Aktivitetsdiagram" />
+            <img class="flex-img grid-4_3-img2" src="images/FrankTheFrancophileSMD.svg" alt="Frank The Francophile State Machine diagram" />
+          <article>
+            <h3>Diagrammer</h3>
+            <p>Vi blev undervist i forskellige typer af aktivitetsdiagrammer for at give bedre forståelse for samt oversigt over spillets gang.
+              Disse diagrammer dækker over:</p>
+            <ul>
+              <li>UML aktivitetsdiagrammer</li>
+              <li>State Machine diagrammer</li>
+            </ul>
+          </article>
+        </div>
+        <hr />
+        <div class="flex-rows">
+          <img class="flex-img" src="images/sketch_game_background.png" alt="Skitse af baggrund fra spillet" />
+          <article class="boks-2">
+            <h3>Adobe Illustrator og designprocesser</h3>
+            <p>Brug af Adobe Illustrator til at gøre skitser fra den kreative idéudvikling til designs som fx start- og slutskærm, baggrundsdesigns, figur- og UI-elementer.</p>
+            </article>
+        </div>
+        <hr />
+        <div class="flex-rows animations-box">
+           <div id="good_container1" class="flaske_container">
+            <div id="good_sprite1" class="good_sprite1"></div>
+          </div>
+          <article>
+            <h3>CSS og JavaScript</h3>
+            <p>Ved at benytte CSS til at animere vores grafik lærte vi at benytte JavaScript til at styre disse animationer og få spillet til at fungere. </p>
+            <p>Et eksempel fra mit eget spil er flasken, som ses ved siden af. Den knuses, og der afspilles en lyd, hvorefter flasken kommer igen. </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    </main>
     <footer></footer>
+    <audio src="images/bottle_shatter1.wav" id="sound_bottle_shatter1"></audio>
     <script src="scripts/script.js"></script>
   </body>
 </html>

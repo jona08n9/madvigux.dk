@@ -297,7 +297,48 @@ article > h2,
   margin-inline-start: var(--space-l);
 }
 
-/*===== XXXXX =======*/
+/*===== Tema 04 =======*/
+
+.animations-box > div {
+  margin-inline-start: var(--space-xxl);
+}
+
+.forsvind {
+  animation-name: forsvind_kf;
+  animation-duration: 0.775s;
+  animation-delay: 0.275s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+@keyframes forsvind_kf {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.flaske_container {
+  width: 250px;
+  height: 250px;
+}
+
+.hel_flaske {
+  background-position: 0%;
+}
+
+.knust_flaske {
+  background-position: -100%;
+}
+
+.good_sprite1 {
+  background-image: url(/images/dansk_klar.svg);
+  background-size: 200% 100%;
+  width: 100%;
+  height: 100%;
+}
 
 /*===== MEDIA Q =======*/
 
