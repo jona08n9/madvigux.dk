@@ -24,7 +24,7 @@ const menuItems = document.querySelectorAll(".menuItem");
 const burger = document.querySelector(".burger");
 const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
-const sti = document.querySelector(".broedkrumme");
+const bread = document.querySelector(".breadcrumb");
 
 window.addEventListener("load", tjekBurger);
 window.addEventListener("resize", tjekBurger);
@@ -34,13 +34,13 @@ function tjekBurger() {
   if (window.matchMedia("(min-width:800px)").matches) {
     console.log("vinduet er 800px +");
     burger.classList.add("hide");
-    sti.classList.add("hide");
+    bread.classList.add("hide");
     menu.classList.remove("menu");
     menu.classList.remove("transition-burger");
   } else {
     console.log("vinduet er 799px -");
     burger.classList.remove("hide");
-    sti.classList.remove("hide");
+    bread.classList.remove("hide");
     menu.classList.add("menu");
   }
 }
