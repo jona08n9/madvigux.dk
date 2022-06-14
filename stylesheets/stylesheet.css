@@ -341,6 +341,7 @@ article > h2 {
 .flex-rows li {
   list-style: disc;
   margin-inline-start: var(--space-xll);
+  max-width: 60ch;
 }
 
 .tema-beskrivelse p {
