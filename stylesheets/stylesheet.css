@@ -702,6 +702,10 @@ textarea {
   color: #f0f0f0;
 }
 
+.captcha {
+  margin-block: var(--space-l);
+}
+
 /*===== TAK.HTML =======*/
 
 .tak-top {
