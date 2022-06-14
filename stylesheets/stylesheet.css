@@ -314,7 +314,7 @@ article > h2 {
   margin-inline: 0 var(--space-s);
   padding-inline: 0 var(--space-s);
   padding-block: var(--space-s);
-  max-width: 300px;
+  max-width: 340px;
 }
 
 .front-page-flex a:hover {
@@ -322,6 +322,11 @@ article > h2 {
   border-radius: 5%;
   padding-inline: var(--space-s);
   transition: all 0.7s ease-in-out;
+}
+
+.index-img {
+  width: 200px;
+  height: auto;
 }
 
 /*===== Grid =======*/
@@ -933,7 +938,7 @@ footer {
   }
 
   .section-flex {
-    width: 850px;
+    width: 800px;
     margin-inline: auto;
   }
 
@@ -944,9 +949,10 @@ footer {
 
   .front-page-flex {
     display: grid;
-    grid-template-columns: repeat(2, 400px);
+    grid-template-columns: repeat(2, 350px);
     justify-items: start;
-    margin-inline-start: 7rem;
+    margin-inline-start: 5rem;
+    margin-inline-end: var(--space-l);
   }
 
   /* ====== FLEX ====== */
