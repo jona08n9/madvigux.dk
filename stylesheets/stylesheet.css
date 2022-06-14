@@ -756,7 +756,12 @@ footer {
   background-color: #fce9c5;
   width: 100%;
   margin-block-start: var(--space-m);
-  padding-block: var(--space-m);
+  padding-block-start: var(--space-s);
+}
+
+.footer-tak {
+  position: absolute;
+  bottom: 0;
 }
 
 #footerID {
