@@ -703,7 +703,7 @@ textarea {
 }
 
 .captcha {
-  margin-block: var(--space-l);
+  margin-block-end: var(--space-l);
 }
 
 /*===== TAK.HTML =======*/
