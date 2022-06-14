@@ -721,29 +721,33 @@ textarea {
 
 .to-index-button {
   display: inline-block;
-  margin-inline: auto;
-}
-
-.to-index-button button {
+  text-align: center;
+  width: 200px;
   background: none;
   border: solid 2px #4a5259;
-  border-radius: 5%;
-  color: #4a5259;
+  border-radius: 3%;
+  color: #4a5259 !important;
   cursor: pointer;
   font-size: var(--space-m);
   font-family: neusa-next-std, sans-serif;
   font-weight: 700;
   font-style: normal;
   outline: none;
+  letter-spacing: 1px;
   padding-block: var(--space-l);
   padding-inline: var(--space-l);
   text-transform: uppercase;
   transition: all 0.3s;
 }
 
-.to-index-button button:hover {
+.to-index-button:hover {
   background: #4a5259;
-  color: #f0f0f0;
+  color: #f0f0f0 !important;
+}
+.tak-flex {
+  margin-block-start: var(--space-xxl);
+  display: flex;
+  justify-content: center;
 }
 
 .about-flex {
