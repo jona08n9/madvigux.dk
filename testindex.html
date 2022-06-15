@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madvig UX - Velkommen til</title>
+    <link rel="icon" type="image/svg+xml" href="/images/vaabenskjold_fav_light.svg" />
+    <link rel="stylesheet" href="stylesheets/stylesheet.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ukq7ndn.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img class="logo" src="images/vaabenskjold_dark.svg" alt="Familien Madvig's vaabenskjold" /></a>
+      <nav class="main-menu">
+        <ul class="menu menu-ul">
+          <li>
+            <a class="menuItem header-link" href="tema01.html"> Tema 01 <span>-</span> Intro </a>
+          </li>
+          <li>
+            <a class="menuItem header-link" href="tema02.html"> Tema 02 <span>-</span> Web </a>
+          </li>
+          <li>
+            <a class="menuItem header-link" href="tema03.html"> Tema 03 <span>-</span> UX </a>
+          </li>
+          <li>
+            <a class="menuItem header-link" href="tema04.html"> Tema 04 <span>-</span> Animation </a>
+          </li>
+          <li>
+            <a class="menuItem header-link" href="tema05.html"> Tema 05 <span>-</span> Indhold </a>
+          </li>
+          <li>
+            <a class="menuItem header-link" href="tema06.html"> Tema 06 <span>-</span> Portofolio </a>
+          </li>
+          <li class="om-mig-li">
+            <a class="menuItem header-link header-about" href="about.html">Om mig</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger">
+        <img class="menuIcon" src="images/menu.svg" alt="menu icon" />
+        <img class="closeIcon" src="images/close.svg" alt="close menu icon" />
+      </button>
+    </header>
+    <div class="breadcrumb"></div>
+    <main>
+      <h1 class="index-top" id="index-top">Velkommen til MadvigUX.dk</h1>
+      <section class="mobile-article">
+        <img class="front-mobile-jonas" src="images/jonas_crop_2.webp" alt="billede af Jonas" />
+        <article>
+          <h2>Om denne portofolio</h2>
+          <p>På de følgende sider vil du kunne læse om de temaer vi har haft det første semester af multimediedesigner uddannelsen hos KEA samt udvalgte erfaringer der er taget med fra disse.</p>
+          <p>Du kan enten dirigere rundt mellem temaerne fra menuen eller se dem længere nede på siden. Du kan også bare trykke <span class="span-til-tema-front" onclick="scrollToTheme()">her</span></p>
+          <p>På siden <a href="about.html">Om mig</a> kan du læse mere om mig (Jonas), som står bag MadvigUX.dk</p>
+        </article>
+      </section>
+      <section class="window-article">
+        <div class="wb-text">
+          <h2>Om denne portofolio</h2>
+          <p>På de følgende sider vil du kunne læse om de temaer vi har haft det første semester af multimediedesigner uddannelsen hos KEA samt udvalgte erfaringer der er taget med fra disse.</p>
+          <p>Du kan enten dirigere rundt mellem temaerne fra menuen eller se dem længere nede på siden. Du kan også bare trykke <span class="span-til-tema-front" onclick="scrollToTheme()">her</span></p>
+          <p>På siden <a href="about.html">Om mig</a> kan du læse mere om mig (Jonas), som står bag MadvigUX.dk</p>
+        </div>
+      </section>
+      <section class="section-flex" id="tema-box">
+        <h2>Temaer</h2>
+        <div class="flex front-page-flex">
+          <a class="frontpage-a-tag" href="tema01.html">
+            <h3>Tema 01 - Introuge</h3>
+            <p>Afsluttende opgave:</p>
+            <ul>
+              <li>Titelsekvens video</li>
+            </ul>
+            <img class="index-img" src="images/index_tema01.webp" alt="billede af titelsekvens" />
+          </a>
+          <a class="frontpage-a-tag" href="tema02.html">
+            <h3>Tema 02 - Grundlæggende Web</h3>
+            <p>Afsluttende opgave:</p>
+            <ul>
+              <li>Responsive Website</li>
+            </ul>
+            <img class="index-img" src="images/index_tema02.webp" alt="billede af responsive website" />
+          </a>
+          <a class="frontpage-a-tag" href="tema03.html">
+            <h3>Tema 03 - Grundlæggende UX</h3>
+            <p>Afsluttende opgave:</p>
+            <ul>
+              <li>Adobe XD Prototype</li>
+              <li>UX Pitch Deck</li>
+            </ul>
+            <img class="index-img" src="images/index_tema03.webp" alt="billede af XD Prototype" />
+          </a>
+          <a class="frontpage-a-tag" href="tema04.html">
+            <h3>Tema 04 - Grundlæggende Animation</h3>
+            <p>Afsluttende opgave:</p>
+            <ul>
+              <li>Spil</li>
+            </ul>
+            <img class="index-img" src="images/index_tema04.webp" alt="billede af startskærm for spillet Frank the Francophile" />
+          </a>
+          <a class="frontpage-a-tag" href="tema05.html">
+            <h3>Tema 05 - Grundlæggende Indhold</h3>
+            <p>Afsluttende opgave:</p>
+            <ul>
+              <li>Pilotsite</li>
+              <li>Redesign og temadokumentation</li>
+            </ul>
+            <img class="index-img" src="images/index_tema05.webp" alt="billede af redesignet hjemmeside for Liljen og Furglen" />
+          </a>
+          <a class="frontpage-a-tag" href="tema06.html">
+            <h3>Tema 06 - Portofolio Eksamen</h3>
+            <p>Afsluttende opgave:</p>
+            <ul>
+              <li>Portofolio</li>
+            </ul>
+            <img class="index-img" src="images/index_tema06.webp" alt="billede af portofolio hjemmeside" />
+          </a>
+        </div>
+      </section>
+    </main>
+    <p>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border: 0; width: 88px; height: 31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+      </a>
+    </p>
+
+    <footer>
+      <p id="footerID">2022 &#169; MadvigUX.dk</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/lordmadvig/?hl=da"><img src="images/MdiInstagram.svg" alt="Instagram Logo" /></a>
+        <a href="https://www.facebook.com/madvig/"><img src="images/MdiFacebook.svg" alt="Facebook Logo" /></a>
+        <a href="https://www.linkedin.com/in/jonasmadvig/"><img src="images/MdiLinkedin.svg" alt="LinkedIn Logo" /></a>
+        <a href="https://github.com/jona08n9/"><img src="images/MdiGithub.svg" alt="GitHub Logo" /></a>
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
