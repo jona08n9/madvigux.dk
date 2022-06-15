@@ -491,6 +491,14 @@ figcaption {
   font-size: var(--space-l);
 }
 
+.img-port {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+  margin-block: var(--space-m);
+}
+
 .grid-1_1 {
   display: flex;
   flex-direction: column;
@@ -1044,6 +1052,10 @@ footer {
     margin-inline-start: var(--space-xxl);
     margin-block: var(--space-m) var(--space-l);
     font-size: var(--space-xl);
+  }
+
+  .img-port {
+    width: 400px;
   }
 
   .about-box {
